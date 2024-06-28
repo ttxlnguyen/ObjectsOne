@@ -31,8 +31,15 @@ public class Main {
         Dog dog1 = new Dog("Max,", 10, "corgi");
         System.out.println(dog1.getName() + " is a " + dog1.getAge() + " year old " + dog1.getBreed() + ".");
 
-        Person[] people = new Person[10];
-        people[0] = person1;
+        PersonArray[] people;
+        people = new PersonArray[][10];
+
+        PersonArray person3 = new PersonArray("Alice", 25);
+        PersonArray person2 = new PersonArray("Bob", 30);
+
+        people[0] = person3;
+        people[1] = person2;
+
 
     }
 }
